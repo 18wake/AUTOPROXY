@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">无感代理</string>
+    <string name="help_text">使用说明（Root 前台轮询模式）：\n1. 本应用通过 Root 守护进程轮询前台应用来自动启停代理，不受 HyperOS/MIUI 的进程冻结、自启动拦截影响，无需 LSPosed/Xposed。\n2. 首次使用：先点「授予 VPN 免确认权限」，再点「安装开机自启并启动」，两者都需要 Root。安装后守护进程立即启动，并在每次开机后自动拉起；「移除开机自启」可撤销。\n3. 在「监控的应用」中勾选需要代理的应用（默认 Gemini、ChatGPT）。打开它们时自动启动 CMFA 代理；全部退到后台并空闲后自动关闭。\n4. 部分系统（MIUI/HyperOS）还需允许 CMFA「后台弹出界面」和「自启动」，否则 Root 启动代理可能失败。\n5. 后台判定：退到后台后进入宽限期，期间流量高于阈值则延长保留，持续空闲后才关闭代理。\n6. 「仅关闭由本应用启动的代理」开启时，你手动打开的代理不会被自动关闭。</string>
+</resources>

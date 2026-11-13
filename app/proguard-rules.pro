@@ -1,0 +1,2 @@
+-keep class com.autoproxy.lsp.HookEntry { *; }
+-keep class com.autoproxy.lsp.ModuleStatus { *; }
